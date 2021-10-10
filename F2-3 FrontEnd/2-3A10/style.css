@@ -106,7 +106,6 @@ header {
 .navbar-brand-text span {
   margin: auto 3px;
 }
-
 .navbar-tools {
   grid-column: 3/4;
   display: flex;
@@ -141,7 +140,7 @@ header {
   align-items: center;
 }
 
-.nav-icon {
+.navbar-tools i {
   font-size: 1.5rem;
   margin: 8px;
 }
@@ -211,12 +210,10 @@ header {
   flex-flow: row wrap;
   justify-content: space-around;
 }
-
-.select {
+#select {
   padding: 96px 0 48px 0;
 }
-
-.select h2 {
+#select h2 {
   margin-bottom: 16px;
   font-size: 1.8rem;
   font-family: "M PLUS Rounded 1c", sans-serif;
@@ -224,7 +221,7 @@ header {
   text-align: center;
 }
 
-.selection {
+.select-wrapper select {
   font-size: 0.8rem;
   width: 42%;
   padding: 8px;
@@ -270,7 +267,6 @@ header {
   display: flex;
   justify-content: center;
 }
-
 .product-price-sold-out {
   text-decoration: line-through;
   margin-left: 5px;
@@ -281,7 +277,7 @@ header {
   color: #2b2b2b;
 }
 
-.card .icon {
+.card .heart-icon {
   position: absolute;
   top: 16px;
   right: 16px;
@@ -297,7 +293,7 @@ header {
   height: 32px;
 }
 
-.card .icon-heart {
+.card i {
   font-size: 1.2rem;
 }
 
@@ -308,6 +304,7 @@ header {
 .real-img,
 .cover-img {
   display: block;
+
   width: 100%;
   /* 維持 1:1 讓照片保持正方形*/
   aspect-ratio: 1/1;
@@ -347,7 +344,7 @@ header {
 }
 
 /* Subscription */
-.subscription-wrapper {
+.subscript-wrapper {
   background-image: url("https://assets-lighthouse.alphacamp.co/uploads/image/file/14376/template.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -358,7 +355,7 @@ header {
   align-items: center;
 }
 
-.subscription {
+.subscript {
   width: 85%;
   padding-left: 20px;
   background: white;
@@ -366,7 +363,7 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.subscription-input {
+.subscript input {
   all: unset;
   background: white;
   width: 55%;
@@ -375,7 +372,7 @@ header {
   border: none;
 }
 
-.subscription-btn {
+.subscript button {
   all: unset;
   width: 90px;
   font-weight: 700;
@@ -390,19 +387,19 @@ header {
   text-align: center;
 }
 
-.subscription-title {
+.subscript-title {
   text-align: center;
   margin: 40px 8px;
   font-weight: 700;
   font-size: 1.2rem;
 }
 
-.subscription-policy {
+.subscript-policy {
   font-size: 0.8rem;
   margin-top: 16px;
 }
 
-.policy-link {
+.subscript-policy a {
   text-decoration: underline;
 }
 
@@ -421,7 +418,7 @@ footer {
     justify-content: center;
   }
 
-  .selection {
+  .select-wrapper select {
     width: 25%;
     font-size: 1rem;
   }
@@ -429,7 +426,7 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
-  .subscription {
+  .subscript {
     width: calc(75% - 80px);
   }
 }
@@ -486,7 +483,7 @@ footer {
   .navbar-tools .search-btn {
     position: relative;
   }
-  .selection {
+  .select-wrapper select {
     width: 15%;
     margin: 8px;
   }
@@ -500,7 +497,7 @@ footer {
     width: 80%;
     margin: 0 auto;
   }
-  .subscription {
+  .subscript {
     width: 50%;
   }
 }
